@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(245, 245, 247);
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .copyright {
+            margin-top: 15px;
+        }
+
+        form {
+            width: 35%;
+            margin: auto auto;
+            margin-top: 150px;
+        }
+
+        .logo {
+            font-size: bold;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .user {
+            font-size: 12px;
+        }
+
+        .password {
+            font-size: 12px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .login-btn {
+            background-color: rgb(66, 152, 250);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .signup-btn {
+            background-color: #9e9d9d;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <div class="logo">DoIt</div>
+        <div class="container">
+            <label for="Username" class="username">Username</label>
+            <input type="text" form="User" id="User">
+            <label for="Passoword" class="password">Password</label>
+            <input type="password" name="password" id="password" class="pwd">
+            <button class="login-btn" onclick="login()">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </form>
+
+    <div class="copyright">
+        <p>DOit - Tasks Managment Application</p>
+        <p>Module 2 Project by: Miguel Gonzalez</p>
+    </div>
+</body>
+
+
+</html>
+<script>
+    function login() {
+        console.log("logged in");
+
+        var email = document.getElementById("User").value;
+        var pass = document.getElementById("password").value;
+
+        console.log("email", email);
+        console.log("pass", pass);
+        //var email1 = localstorage.getitem("email1");
+        //var pass1 = localstorage.getitem("pass1");
+
+        //if (email == email1 && pass == pass1) {
+        //    window.location.href = "home.html";
+
+        //} else {
+        //    alert("email and pass is incorrrect")
+        //}
+    }
+</script>

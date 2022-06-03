@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Task Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 249, 249);
+        }
+        .header {
+            background-color: #111;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex: 1;
+            align-items: center;
+        }
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            margin-left: 50px;
+            width: 100px;
+        }
+        
+
+        .logout-btn {
+            color: white;
+            background-color: #111;
+            height: 50px;
+            width: 70px;
+        }
+        
+        .task {
+            width: 350px;
+            line-height: 70px;
+            color: #333;
+        }
+        .Status-A {
+            color: lightskyblue;
+        }
+        .Status-B {
+            color: lightgreen;
+        }
+        .Status-C {
+            color: purple;
+        }
+        .Status-D {
+            color: red;
+        }
+        .Status-F {
+            color: lightskyblue;
+        }
+        .aad {
+            width: 100px;
+        }
+        button {
+            height: 30px;
+            margin-right: 20px;
+            width: 70px;
+            border-radius: 5px;
+            border: none;
+        }
+        .container {
+            background-color: white;
+            margin-top: 20px;
+            width: 68%;
+            border: none;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        .head {
+            font-weight: bold;
+        }
+        .add-btn {
+            color: white;
+            font-size: 20px;
+            background-color: rgb(66, 152, 250);
+            height: 40px;
+            width: 200px;
+            display: inline-block;
+        }
+        .ass {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DOit</div>
+        <div class="btn">
+            <button class="logout-btn">Log out</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <table>
+            <tr>
+                <thead>
+                
+                    <td class="head">
+                        Task
+                    </td>
+                    <td class="head">Status</td>
+                    <td class="head">Operations</td>
+            
+                </thead>
+            </tr>
+            <tr>
+                
+                <td class="task">Module 3 project Full Stack Remote Bootcamp</td>
+                <td class="Status-A aad">proposed</td>
+                <td class="Operations">
+                    <button>Details</button> <br> <button>Edit</button> <br> <button>Delete</button></td>
+
+            </tr>
+            <tr>
+                <td class="task">Module 1 project Full Stack Remote Bootcamp</td>
+                <td class="Status-B aad">Completed</td>
+                <td class="Operations">
+                    <button>Details</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="task">Module 2 project Full Stack Remote Bootcamp</td>
+                <td class="Status-C aad">Review</td>
+                <td class="Operations">
+                    <button>Details</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="task">My Web Portfolio</td>
+                <td class="Status-D aad">In Process</td>
+                <td class="Operations">
+                    <button>Details</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr> <td class="task">Apply improvements to the Module 2 Project</td>
+                <td class="Status-F aad">proposed</td>
+                <td class="Operations">
+                    <button>Details</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td></tr>
+            <tr></tr>
+        </table>
+        <div class="ass">    <button class="add-btn">Add</button> </div>
+    </div>
+</body>
+
+</html>
